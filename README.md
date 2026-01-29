@@ -245,3 +245,13 @@ This project is licensed under the Apache License 2.0.
 
 This repository represents a real-world DevOps automation workflow using industry tools and cloud infrastructure.
 Designed for learning, interviews, and professional DevOps portfolios.
+
+
+<img width="1600" height="719" alt="image" src="https://github.com/user-attachments/assets/42acaf25-93ae-45b5-9c9f-22366a6bbf32" />
+<img width="1600" height="762" alt="image" src="https://github.com/user-attachments/assets/a7788289-ed15-4656-b84f-b4473da09f25" />
+<img width="1600" height="717" alt="image" src="https://github.com/user-attachments/assets/cbbc99e9-8b99-4e71-bee4-f52f3ec0d867" />
+<img width="1600" height="706" alt="image" src="https://github.com/user-attachments/assets/29586335-20a1-4198-be3d-dea58cf86d01" />
+<img width="1600" height="766" alt="image" src="https://github.com/user-attachments/assets/95f19ff3-551e-417b-861e-a18fc31a9b07" />
+<img width="1600" height="651" alt="image" src="https://github.com/user-attachments/assets/c4aff999-4026-4e74-845c-7b180b568b30" />
+<img width="1600" height="518" alt="image" src="https://github.com/user-attachments/assets/f0f2db33-6c7f-424e-8fea-b7c32fff9508" />
+
