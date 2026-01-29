@@ -1,30 +1,45 @@
-🚀 Spring PetClinic – End-to-End DevOps Automation Project
+<h1 align="center">
+🚀 SPRING PETCLINIC — END-TO-END DEVOPS AUTOMATION PROJECT 🚀
+</h1>
 
-A production-style DevOps project that automates infrastructure provisioning, configuration management, and CI/CD deployment of a Spring Boot application on AWS using Terraform, Ansible, and AWS CodePipeline.
+<p align="center">
+<b>Terraform • Ansible • AWS • CI/CD • Infrastructure as Code</b>
+</p>
+
+<p align="center">
+Production-style automation of infrastructure provisioning, configuration management, 
+and CI/CD deployment for a Spring Boot application on AWS
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/AWS-EC2-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Terraform-IaC-purple?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Ansible-Config-red?style=for-the-badge" />
+<img src="https://img.shields.io/badge/CI%2FCD-Automated-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Spring%20Boot-Java-green?style=for-the-badge" />
+</p>
+
+<hr/>
 
 📌 Project Overview
 
-This project uses the Spring PetClinic application as a real-world workload to demonstrate DevOps best practices.
+This is a production-style DevOps project built around the Spring PetClinic application to demonstrate real-world DevOps practices.
 
-The focus is on automation, repeatability, and zero manual deployment.
+The emphasis is on automation, repeatability, scalability, and zero manual deployment — not just running an application.
 
 🎯 DevOps Objectives
 
-Infrastructure as Code (IaC)
-
-Configuration management
-
-CI/CD automation
-
-Cloud-based deployment
-
-Production-style workflow
+✔ Infrastructure as Code (IaC)
+✔ Configuration Management
+✔ CI/CD Pipeline Automation
+✔ Cloud-Based Deployment
+✔ Production-Ready Workflow
 
 
-🏗️ Architecture
+🏗️ Architecture Overview
 Developer
    |
-   |  Git Push
+   | Git Push
    v
 GitHub Repository
    |
@@ -43,7 +58,8 @@ EC2 Instances (Terraform Provisioned)
    v
 Spring Boot Application (PetClinic)
 
-🛠️ Tech Stack
+
+🛠️ Technology Stack
 | Layer                    | Tools                           |
 | ------------------------ | ------------------------------- |
 | Cloud Provider           | AWS                             |
@@ -59,40 +75,40 @@ Spring Boot Application (PetClinic)
 
 🤖 Automation Highlights
 
-Provisioned EC2 instances using Terraform
+Provisioned EC2 infrastructure using Terraform
 
 Managed SSH access, security groups, and networking
 
-Installed Java and dependencies using Ansible
+Installed Java and system dependencies via Ansible
 
 Deployed Spring Boot application automatically
 
-CI/CD pipeline triggers on GitHub commits
+CI/CD pipeline triggers on every GitHub commit
 
-No manual SSH or deployment steps
+Zero manual SSH or deployment steps
 
 📂 Infrastructure & Configuration Details
-🔹 Terraform
+🔹 Terraform Responsibilities
 
-Creates EC2 instances
+EC2 instance creation
 
-Manages key pairs and security groups
+Key pair and security group management
 
-Outputs public IPs for Ansible inventory
+Output generation for Ansible inventory
 
-🔹 Ansible
+🔹 Ansible Responsibilities
 
-Connects to EC2 via SSH
+SSH-based configuration management
 
-Installs Java and required packages
+Java and dependency installation
 
-Deploys and manages the Spring Boot application
+Application deployment and service management
 
 🔄 CI/CD Pipeline Flow
 
-Code pushed to GitHub
+Developer pushes code to GitHub
 
-AWS CodePipeline is triggered automatically
+AWS CodePipeline triggers automatically
 
 AWS CodeBuild:
 
@@ -100,12 +116,13 @@ Pulls source code
 
 Builds application using Maven
 
-Executes Ansible deployment
+Executes Ansible playbooks
 
-Application is deployed to EC2
+Application deployed to EC2 instances
+
 🌐 Application Access
 
-After successful pipeline execution, access the application at:
+After a successful pipeline execution, the application is available at:
 
 http://<EC2_PUBLIC_IP>:8080
 
@@ -129,15 +146,15 @@ Run with Gradle
 ./gradlew bootRun
 
 🗄️ Database Configuration
-Default (H2 – In-Memory)
+🔹 Default (H2 – In-Memory)
 
-Automatically initialized at startup
+Auto-initialized at startup
 
-H2 Console:
+Console:
 
 http://<EC2_PUBLIC_IP>:8080/h2-console
 
-MySQL (Optional)
+🔹 MySQL (Optional)
 docker run -e MYSQL_USER=petclinic \
 -e MYSQL_PASSWORD=petclinic \
 -e MYSQL_ROOT_PASSWORD=root \
@@ -145,18 +162,18 @@ docker run -e MYSQL_USER=petclinic \
 -p 3306:3306 mysql:9.5
 
 
-Activate profile:
+Activate:
 
 spring.profiles.active=mysql
 
-PostgreSQL (Optional)
+🔹 PostgreSQL (Optional)
 docker run -e POSTGRES_USER=petclinic \
 -e POSTGRES_PASSWORD=petclinic \
 -e POSTGRES_DB=petclinic \
 -p 5432:5432 postgres:18.1
 
 
-Activate profile:
+Activate:
 
 spring.profiles.active=postgres
 
@@ -166,23 +183,19 @@ Integration tests using H2
 
 Database-specific tests for MySQL and PostgreSQL
 
-Build validation through CI/CD pipeline
-
-
+CI/CD pipeline enforces build validation
 
 🧠 Challenges & Learnings
 
-Troubleshot Ansible SSH and inventory issues
+Resolved Ansible SSH and inventory issues
 
-Resolved Java and dependency compatibility problems
+Fixed Java and dependency compatibility problems
 
-Fixed IAM permission issues in AWS CodeBuild
+Debugged IAM permission issues in AWS CodeBuild
 
-Gained hands-on experience with CI/CD troubleshooting
+Learned end-to-end CI/CD troubleshooting
 
-Learned end-to-end DevOps workflow design
-
-
+Gained hands-on cloud DevOps experience
 
 ✅ DevOps Checklist
 
@@ -201,17 +214,17 @@ Learned end-to-end DevOps workflow design
 📌 Note on Base Application
 
 The application workload is based on the Spring PetClinic sample project.
-All DevOps automation, infrastructure, and CI/CD implementation are independently designed and implemented for this project.
+All DevOps automation, infrastructure, and CI/CD workflows are independently designed and implemented.
 
-Original source:
+Original Source:
 
 https://github.com/spring-projects/spring-petclinic
 
 🤝 Contributing
 
-Apache License 2.0
+Licensed under Apache License 2.0
 
-Issues and pull requests are welcome
+Issues and pull requests welcome
 
 Commits must include Signed-off-by (DCO)
 
@@ -221,26 +234,5 @@ This project is licensed under the Apache License 2.0.
 
 ⭐ Final Note
 
-This repository demonstrates production-style DevOps automation using real tools and real cloud workflows.
-It is intended for learning, interviews, and hands-on DevOps practice.
-
-
-
-
-
-<img width="1600" height="719" alt="image" src="https://github.com/user-attachments/assets/0a722fc9-9617-471b-9410-81b49c6e17f1" />
-
-<img width="1600" height="762" alt="image" src="https://github.com/user-attachments/assets/69bab8f2-1eeb-49ce-b7f4-44a4784b97c7" />
-
-<img width="1600" height="717" alt="image" src="https://github.com/user-attachments/assets/fc8442aa-7f6a-49a6-b77c-5e08a45743f4" />
-
-<img width="1600" height="766" alt="image" src="https://github.com/user-attachments/assets/c082f125-420a-4b17-9b59-de708c36d102" />
-
-<img width="1600" height="706" alt="image" src="https://github.com/user-attachments/assets/d6bfda54-d821-418e-a47e-09d1b3aad437" />
-
-<img width="1600" height="651" alt="image" src="https://github.com/user-attachments/assets/2e24aa0a-0c1a-43a0-ab4d-d9a74f44eb3a" />
-
-<img width="1600" height="518" alt="image" src="https://github.com/user-attachments/assets/34cde43b-e48c-4591-b22c-48d85d5a5454" />
-
-
-<img width="1156" height="867" alt="image" src="https://github.com/user-attachments/assets/ae37a632-a6f9-46e4-a388-b3fc929fa95c" />
+This repository represents a real-world DevOps automation workflow using industry tools and cloud infrastructure.
+Designed for learning, interviews, and professional DevOps portfolios.
