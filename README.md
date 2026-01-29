@@ -37,6 +37,7 @@ The emphasis is on automation, repeatability, scalability, and zero manual deplo
 
 
 🏗️ Architecture Overview
+
 Developer
    |
    | Git Push
@@ -60,6 +61,7 @@ Spring Boot Application (PetClinic)
 
 
 🛠️ Technology Stack
+
 | Layer                    | Tools                           |
 | ------------------------ | ------------------------------- |
 | Cloud Provider           | AWS                             |
@@ -72,6 +74,7 @@ Spring Boot Application (PetClinic)
 | Java Version             | Java 17                         |
 | Database                 | H2 (default), MySQL, PostgreSQL |
 | OS                       | Amazon Linux                    |
+
 
 🤖 Automation Highlights
 
@@ -87,7 +90,9 @@ CI/CD pipeline triggers on every GitHub commit
 
 Zero manual SSH or deployment steps
 
+
 📂 Infrastructure & Configuration Details
+
 🔹 Terraform Responsibilities
 
 EC2 instance creation
@@ -96,6 +101,7 @@ Key pair and security group management
 
 Output generation for Ansible inventory
 
+
 🔹 Ansible Responsibilities
 
 SSH-based configuration management
@@ -103,6 +109,7 @@ SSH-based configuration management
 Java and dependency installation
 
 Application deployment and service management
+
 
 🔄 CI/CD Pipeline Flow
 
@@ -120,11 +127,13 @@ Executes Ansible playbooks
 
 Application deployed to EC2 instances
 
+
 🌐 Application Access
 
 After a successful pipeline execution, the application is available at:
 
 http://<EC2_PUBLIC_IP>:8080
+
 
 ▶️ Run Application Locally (Optional)
 Prerequisites
